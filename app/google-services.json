@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "498913524194",
+    "firebase_url": "https://mysandwich-beb9a.firebaseio.com",
+    "project_id": "mysandwich-beb9a",
+    "storage_bucket": "mysandwich-beb9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498913524194:android:3645d14b7e0b8011",
+        "android_client_info": {
+          "package_name": "com.oran.mysandwich"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498913524194-g3mccgbdg544uf09ci63opft0ocq6vb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLSERvlM_USWbkHOBGQjRUCBeQ0FJuevM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
