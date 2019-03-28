@@ -55,8 +55,8 @@ public class WizardFragment extends Fragment {
 				}
 			});
 		}
-		if (inflate.findViewById (R.id.w_bread_icon) !=null ){
-			final ImageView bread_btn = (ImageView) inflate.findViewById(R.id.w_bread_icon);
+		if (inflate.findViewById (R.id.two) !=null ){
+			final ImageView bread_btn = (ImageView) inflate.findViewById(R.id.two);
 			bread_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
