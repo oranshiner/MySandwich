@@ -48,7 +48,6 @@
 
 
     <ImageView
-        android:id="@+id/icon_androidsrc"
         android:layout_width="205dp"
         android:layout_height="205dp"
         android:layout_marginStart="8dp"
@@ -62,74 +61,58 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="412dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/mysandwich_img"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent" />
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="114dp"
         android:layout_marginEnd="8dp"
+        android:src="@drawable/mysandwich_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="159dp"
+        android:layout_marginLeft="30dp"
         android:src="@drawable/mayo_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ketshup_icon"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:layout_width="53dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="110dp"
         android:layout_marginBottom="159dp"
         android:src="@drawable/lettuce_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:layout_width="55dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="170dp"
         android:layout_marginBottom="159dp"
         android:src="@drawable/cucumber_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ketshup_icon" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:layout_width="55dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="159dp"
         android:src="@drawable/tomato_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/baguette"
-        app:layout_constraintHorizontal_bias="0.462"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mayo_icon"
-        app:layout_constraintVertical_bias="0.516" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:layout_width="55dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginBottom="159dp"
         android:src="@drawable/cheese_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toEndOf="@+id/baguette"
-        app:layout_constraintTop_toBottomOf="@+id/hardal_icon"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/arrowLeft"
@@ -151,5 +134,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <ImageView
+        android:id="@+id/action_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/action_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

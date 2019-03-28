@@ -112,6 +112,16 @@ public class WizardFragment extends Fragment {
 			});
 		}
 
+		if (inflate.findViewById (R.id.action_btn) !=null ){
+			final ImageView action_btn = (ImageView) inflate.findViewById(R.id.action_btn);
+			action_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					startActivity(new Intent(getContext(), Order.class));
+				}
+			});
+		}
+
 
 		return inflate;
 	}
