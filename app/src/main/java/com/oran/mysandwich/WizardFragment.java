@@ -69,6 +69,44 @@ public class WizardFragment extends Fragment {
 				}
 			});
 		}
+		if (inflate.findViewById (R.id.lettuce_icon) !=null ){
+			final ImageView lettuce_btn = (ImageView) inflate.findViewById(R.id.lettuce_icon);
+			lettuce_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					lettuce_btn.setImageResource(R.drawable.s_lettuce_icon);
+				}
+			});
+		}
+
+		if (inflate.findViewById (R.id.tomato_icon) !=null ){
+			final ImageView tomato_btn = (ImageView) inflate.findViewById(R.id.tomato_icon);
+			tomato_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					tomato_btn.setImageResource(R.drawable.s_tomato_icon);
+				}
+			});
+		}
+
+		if (inflate.findViewById (R.id.cucumber_icon) !=null ){
+			final ImageView cucumber_btn = (ImageView) inflate.findViewById(R.id.cucumber_icon);
+			cucumber_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					cucumber_btn.setImageResource(R.drawable.s_cucumber_icon);
+				}
+			});
+		}
+		if (inflate.findViewById (R.id.mayo_icon) !=null ){
+			final ImageView mayo_btn = (ImageView) inflate.findViewById(R.id.mayo_icon);
+			mayo_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					mayo_btn.setImageResource(R.drawable.s_mayo_icon);
+				}
+			});
+		}
 
 
 		return inflate;

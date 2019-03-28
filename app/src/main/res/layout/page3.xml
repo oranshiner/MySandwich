@@ -60,41 +60,42 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/pita"
+        android:id="@+id/pickle_icon"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
-        android:src="@drawable/pita_icon"
+        android:src="@drawable/pickle_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/w_bread_icon"
+        app:layout_constraintEnd_toStartOf="@+id/cucumber_icon"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/w_bread_icon"
+        android:id="@+id/cucumber_icon"
         android:layout_width="53dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
-        android:src="@drawable/bread_w_icon"
+        android:src="@drawable/cucumber_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/b_bread_icon"
+        android:id="@+id/tomato_icon"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
-        android:src="@drawable/bread_b_icon"
+        android:src="@drawable/tomato_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/w_bread_icon" />
+        app:layout_constraintStart_toEndOf="@+id/cucumber_icon" />
 
     <ImageView
+        android:alpha="0"
         android:id="@+id/croissant"
         android:layout_width="55dp"
         android:layout_height="54dp"
@@ -107,10 +108,11 @@
         app:layout_constraintEnd_toStartOf="@+id/baguette"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pita"
+        app:layout_constraintTop_toBottomOf="@+id/pickle_icon"
         app:layout_constraintVertical_bias="0.516" />
 
     <ImageView
+        android:alpha="0"
         android:id="@+id/baguette"
         android:layout_width="55dp"
         android:layout_height="54dp"
@@ -123,23 +125,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/w_bread_icon"
+        app:layout_constraintTop_toBottomOf="@+id/cucumber_icon"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView
-        android:id="@+id/roll_icon"
+        android:id="@+id/lettuce_icon"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/roll_icon"
+        android:src="@drawable/lettuce_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toEndOf="@+id/baguette"
-        app:layout_constraintTop_toBottomOf="@+id/b_bread_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tomato_icon"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView
