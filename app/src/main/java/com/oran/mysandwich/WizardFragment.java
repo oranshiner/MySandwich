@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 
 public class WizardFragment extends Fragment {
@@ -49,6 +48,24 @@ public class WizardFragment extends Fragment {
 				@Override
 				public void onClick(View v){
 					startActivity(new Intent(getContext(), MainActivity.class));
+				}
+			});
+		}
+		if (inflate.findViewById (R.id.w_bread_icon) !=null ){
+			final ImageView bread_btn = (ImageView) inflate.findViewById(R.id.w_bread_icon);
+			bread_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					bread_btn.setImageResource(R.drawable.s_w_bread_icon);
+				}
+			});
+		}
+		if (inflate.findViewById (R.id.cheese_icon) !=null ){
+			final ImageView cheese_btn = (ImageView) inflate.findViewById(R.id.cheese_icon);
+			cheese_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					cheese_btn.setImageResource(R.drawable.s_cheese_icon);
 				}
 			});
 		}

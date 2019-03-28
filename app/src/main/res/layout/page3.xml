@@ -60,18 +60,18 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/one"
+        android:id="@+id/pita"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
         android:src="@drawable/pita_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/two"
+        app:layout_constraintEnd_toStartOf="@+id/w_bread_icon"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/two"
+        android:id="@+id/w_bread_icon"
         android:layout_width="53dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -83,7 +83,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/tree"
+        android:id="@+id/b_bread_icon"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -92,10 +92,10 @@
         android:src="@drawable/bread_b_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/two" />
+        app:layout_constraintStart_toEndOf="@+id/w_bread_icon" />
 
     <ImageView
-        android:id="@+id/fore"
+        android:id="@+id/croissant"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -104,14 +104,14 @@
         android:layout_marginBottom="8dp"
         android:src="@drawable/croissant_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/five"
+        app:layout_constraintEnd_toStartOf="@+id/baguette"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintTop_toBottomOf="@+id/pita"
         app:layout_constraintVertical_bias="0.516" />
 
     <ImageView
-        android:id="@+id/five"
+        android:id="@+id/baguette"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -123,11 +123,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/two"
+        app:layout_constraintTop_toBottomOf="@+id/w_bread_icon"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView
-        android:id="@+id/six"
+        android:id="@+id/roll_icon"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -138,8 +138,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toEndOf="@+id/five"
-        app:layout_constraintTop_toBottomOf="@+id/tree"
+        app:layout_constraintStart_toEndOf="@+id/baguette"
+        app:layout_constraintTop_toBottomOf="@+id/b_bread_icon"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView

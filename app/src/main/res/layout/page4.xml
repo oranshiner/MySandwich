@@ -67,7 +67,7 @@
         android:layout_marginBottom="159dp"
         android:src="@drawable/pita_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/two"
+        app:layout_constraintEnd_toStartOf="@+id/salamy_icon"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -92,7 +92,7 @@
         android:src="@drawable/bread_b_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/two" />
+        app:layout_constraintStart_toEndOf="@+id/salamy_icon" />
 
     <ImageView
         android:id="@+id/fore"
@@ -104,10 +104,10 @@
         android:layout_marginBottom="8dp"
         android:src="@drawable/croissant_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/five"
+        app:layout_constraintEnd_toStartOf="@+id/baguette"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintTop_toBottomOf="@+id/egg_icon"
         app:layout_constraintVertical_bias="0.516" />
 
     <ImageView
@@ -123,7 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/two"
+        app:layout_constraintTop_toBottomOf="@+id/salamy_icon"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView
@@ -138,8 +138,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toEndOf="@+id/five"
-        app:layout_constraintTop_toBottomOf="@+id/tree"
+        app:layout_constraintStart_toEndOf="@+id/baguette"
+        app:layout_constraintTop_toBottomOf="@+id/cheese_icon"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView
