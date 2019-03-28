@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 
 public class WizardFragment extends Fragment {
@@ -40,6 +39,10 @@ public class WizardFragment extends Fragment {
 		case 3:
 			layout_id = R.layout.page4;
 			break;
+
+			case 4:
+				layout_id = R.layout.page5;
+				break;
 		}
 
 		View inflate = inflater.inflate(layout_id, container, false);
@@ -49,6 +52,62 @@ public class WizardFragment extends Fragment {
 				@Override
 				public void onClick(View v){
 					startActivity(new Intent(getContext(), MainActivity.class));
+				}
+			});
+		}
+		if (inflate.findViewById (R.id.w_bread_icon) !=null ){
+			final ImageView bread_btn = (ImageView) inflate.findViewById(R.id.w_bread_icon);
+			bread_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					bread_btn.setImageResource(R.drawable.s_w_bread_icon);
+				}
+			});
+		}
+		if (inflate.findViewById (R.id.cheese_icon) !=null ){
+			final ImageView cheese_btn = (ImageView) inflate.findViewById(R.id.cheese_icon);
+			cheese_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					cheese_btn.setImageResource(R.drawable.s_cheese_icon);
+				}
+			});
+		}
+		if (inflate.findViewById (R.id.lettuce_icon) !=null ){
+			final ImageView lettuce_btn = (ImageView) inflate.findViewById(R.id.lettuce_icon);
+			lettuce_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					lettuce_btn.setImageResource(R.drawable.s_lettuce_icon);
+				}
+			});
+		}
+
+		if (inflate.findViewById (R.id.tomato_icon) !=null ){
+			final ImageView tomato_btn = (ImageView) inflate.findViewById(R.id.tomato_icon);
+			tomato_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					tomato_btn.setImageResource(R.drawable.s_tomato_icon);
+				}
+			});
+		}
+
+		if (inflate.findViewById (R.id.cucumber_icon) !=null ){
+			final ImageView cucumber_btn = (ImageView) inflate.findViewById(R.id.cucumber_icon);
+			cucumber_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					cucumber_btn.setImageResource(R.drawable.s_cucumber_icon);
+				}
+			});
+		}
+		if (inflate.findViewById (R.id.mayo_icon) !=null ){
+			final ImageView mayo_btn = (ImageView) inflate.findViewById(R.id.mayo_icon);
+			mayo_btn.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v){
+					mayo_btn.setImageResource(R.drawable.s_mayo_icon);
 				}
 			});
 		}

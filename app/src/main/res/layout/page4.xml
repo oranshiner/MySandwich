@@ -60,42 +60,43 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/one"
+        android:id="@+id/mayo_icon"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
-        android:src="@drawable/pita_icon"
+        android:src="@drawable/mayo_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/two"
+        app:layout_constraintEnd_toStartOf="@+id/ketshup_icon"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/two"
+        android:id="@+id/ketshup_icon"
         android:layout_width="53dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
-        android:src="@drawable/bread_w_icon"
+        android:src="@drawable/ketshup_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/tree"
+        android:id="@+id/hardal_icon"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
-        android:src="@drawable/bread_b_icon"
+        android:src="@drawable/hardal_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/two" />
+        app:layout_constraintStart_toEndOf="@+id/ketshup_icon" />
 
     <ImageView
-        android:id="@+id/fore"
+        android:alpha="0"
+        android:id="@+id/croissant"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -104,14 +105,15 @@
         android:layout_marginBottom="8dp"
         android:src="@drawable/croissant_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/five"
+        app:layout_constraintEnd_toStartOf="@+id/baguette"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintTop_toBottomOf="@+id/mayo_icon"
         app:layout_constraintVertical_bias="0.516" />
 
     <ImageView
-        android:id="@+id/five"
+        android:alpha="0"
+        android:id="@+id/baguette"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -123,23 +125,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/two"
+        app:layout_constraintTop_toBottomOf="@+id/ketshup_icon"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView
-        android:id="@+id/six"
+        android:id="@+id/thina_icon"
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/roll_icon"
+        android:src="@drawable/thina_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toEndOf="@+id/five"
-        app:layout_constraintTop_toBottomOf="@+id/tree"
+        app:layout_constraintStart_toEndOf="@+id/baguette"
+        app:layout_constraintTop_toBottomOf="@+id/hardal_icon"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView

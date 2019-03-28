@@ -19,6 +19,8 @@ public class New extends AppCompatActivity {
     private View indicator2;
     private View indicator3;
     private View indicator4;
+    private View indicator5;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class New extends AppCompatActivity {
         indicator2 = (View) findViewById(R.id.indicator2);
         indicator3 = (View) findViewById(R.id.indicator3);
         indicator4 = (View) findViewById(R.id.indicator4);
+        indicator5 = (View) findViewById(R.id.indicator5);
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
@@ -53,7 +56,7 @@ public class New extends AppCompatActivity {
 
     private class ViewPagerAdapter extends FragmentPagerAdapter {
 
-        private int WIZARD_PAGES_COUNT = 4;
+        private int WIZARD_PAGES_COUNT = 5;
 
         public ViewPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -117,6 +120,10 @@ public class New extends AppCompatActivity {
                 indicator4.getLayoutParams().width = defaultValue;
                 indicator4.requestLayout();
 
+                indicator5.getLayoutParams().height = defaultValue;
+                indicator5.getLayoutParams().width = defaultValue;
+                indicator5.requestLayout();
+
                 break;
 
             case 1:
@@ -135,6 +142,10 @@ public class New extends AppCompatActivity {
                 indicator4.getLayoutParams().height = defaultValue;
                 indicator4.getLayoutParams().width = defaultValue;
                 indicator4.requestLayout();
+
+                indicator5.getLayoutParams().height = defaultValue;
+                indicator5.getLayoutParams().width = defaultValue;
+                indicator5.requestLayout();
                 break;
 
             case 2:
@@ -153,6 +164,10 @@ public class New extends AppCompatActivity {
                 indicator4.getLayoutParams().height = defaultValue;
                 indicator4.getLayoutParams().width = defaultValue;
                 indicator4.requestLayout();
+
+                indicator5.getLayoutParams().height = defaultValue;
+                indicator5.getLayoutParams().width = defaultValue;
+                indicator5.requestLayout();
                 break;
 
             case 3:
@@ -171,6 +186,33 @@ public class New extends AppCompatActivity {
                 indicator4.getLayoutParams().height = resizeValue;
                 indicator4.getLayoutParams().width = resizeValue;
                 indicator4.requestLayout();
+
+                indicator5.getLayoutParams().height = defaultValue;
+                indicator5.getLayoutParams().width = defaultValue;
+                indicator5.requestLayout();
+                break;
+
+
+            case 4:
+                indicator1.getLayoutParams().height = defaultValue;
+                indicator1.getLayoutParams().width = defaultValue;
+                indicator1.requestLayout();
+
+                indicator2.getLayoutParams().height = defaultValue;
+                indicator2.getLayoutParams().width = defaultValue;
+                indicator2.requestLayout();
+
+                indicator3.getLayoutParams().height = defaultValue;
+                indicator3.getLayoutParams().width = defaultValue;
+                indicator3.requestLayout();
+
+                indicator4.getLayoutParams().height = defaultValue;
+                indicator4.getLayoutParams().width = defaultValue;
+                indicator4.requestLayout();
+
+                indicator5.getLayoutParams().height = resizeValue;
+                indicator5.getLayoutParams().width = resizeValue;
+                indicator5.requestLayout();
                 break;
         }
 
