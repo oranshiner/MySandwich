@@ -39,6 +39,10 @@ public class WizardFragment extends Fragment {
 		case 3:
 			layout_id = R.layout.page4;
 			break;
+
+			case 4:
+				layout_id = R.layout.page5;
+				break;
 		}
 
 		View inflate = inflater.inflate(layout_id, container, false);
