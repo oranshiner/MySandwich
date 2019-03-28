@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 public class WizardFragment extends Fragment {
 
 	int wizard_page_position;
-	
+
 	public WizardFragment(int position) {
 		this.wizard_page_position = position;
 	}
@@ -18,6 +18,7 @@ public class WizardFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
 		int layout_id = R.layout.page1;
 		switch (wizard_page_position) {
 		case 0:
