@@ -1,5 +1,6 @@
 package com.oran.mysandwich;
 
+import android.content.res.ColorStateList;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,10 +8,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -25,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     private ViewPager viewPager;
-    private View indicator1;
-    private View indicator2;
-    private View indicator3;
-    private View indicator4;
-    private View indicator5;
+    private AppCompatImageView indicator1;
+    private AppCompatImageView indicator2;
+    private AppCompatImageView indicator3;
+    private AppCompatImageView indicator4;
+    private AppCompatImageView indicator5;
 
 
     @Override
@@ -37,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        indicator1 = (View) findViewById(R.id.indicator1);
-        indicator2 = (View) findViewById(R.id.indicator2);
-        indicator3 = (View) findViewById(R.id.indicator3);
-        indicator4 = (View) findViewById(R.id.indicator4);
-        indicator5 = (View) findViewById(R.id.indicator5);
+        indicator1 = findViewById(R.id.indicator1);
+        indicator2 = findViewById(R.id.indicator2);
+        indicator3 = findViewById(R.id.indicator3);
+        indicator4 = findViewById(R.id.indicator4);
+        indicator5 = findViewById(R.id.indicator5);
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new MainActivity.ViewPagerAdapter(getSupportFragmentManager()));
@@ -112,18 +115,20 @@ public class MainActivity extends AppCompatActivity {
     public void updateIndicators(int position) {
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         int resizeValue = (int) TypedValue.applyDimension(
-                TypedValue.COMPLEX_UNIT_DIP, 25, metrics);
+                TypedValue.COMPLEX_UNIT_DIP, 10, metrics);
         int defaultValue = (int) TypedValue.applyDimension(
-                TypedValue.COMPLEX_UNIT_DIP, 15, metrics);
+                TypedValue.COMPLEX_UNIT_DIP, 10, metrics);
         switch (position) {
             case 0:
                 indicator1.getLayoutParams().height = resizeValue;
                 indicator1.getLayoutParams().width = resizeValue;
                 indicator1.requestLayout();
+                indicator1.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
 
                 indicator2.getLayoutParams().height = defaultValue;
                 indicator2.getLayoutParams().width = defaultValue;
                 indicator2.requestLayout();
+                indicator2.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator3.getLayoutParams().height = defaultValue;
                 indicator3.getLayoutParams().width = defaultValue;
@@ -132,10 +137,12 @@ public class MainActivity extends AppCompatActivity {
                 indicator4.getLayoutParams().height = defaultValue;
                 indicator4.getLayoutParams().width = defaultValue;
                 indicator4.requestLayout();
+                indicator4.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator5.getLayoutParams().height = defaultValue;
                 indicator5.getLayoutParams().width = defaultValue;
                 indicator5.requestLayout();
+                indicator5.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 break;
 
@@ -143,66 +150,83 @@ public class MainActivity extends AppCompatActivity {
                 indicator1.getLayoutParams().height = defaultValue;
                 indicator1.getLayoutParams().width = defaultValue;
                 indicator1.requestLayout();
+                indicator1.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator2.getLayoutParams().height = resizeValue;
                 indicator2.getLayoutParams().width = resizeValue;
                 indicator2.requestLayout();
+                indicator2.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
 
                 indicator3.getLayoutParams().height = defaultValue;
                 indicator3.getLayoutParams().width = defaultValue;
                 indicator3.requestLayout();
+                indicator3.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator4.getLayoutParams().height = defaultValue;
                 indicator4.getLayoutParams().width = defaultValue;
                 indicator4.requestLayout();
+                indicator4.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator5.getLayoutParams().height = defaultValue;
                 indicator5.getLayoutParams().width = defaultValue;
                 indicator5.requestLayout();
+                indicator5.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
                 break;
 
             case 2:
                 indicator1.getLayoutParams().height = defaultValue;
                 indicator1.getLayoutParams().width = defaultValue;
                 indicator1.requestLayout();
+                indicator1.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator2.getLayoutParams().height = defaultValue;
                 indicator2.getLayoutParams().width = defaultValue;
                 indicator2.requestLayout();
+                indicator2.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator3.getLayoutParams().height = resizeValue;
                 indicator3.getLayoutParams().width = resizeValue;
                 indicator3.requestLayout();
+                indicator3.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
 
                 indicator4.getLayoutParams().height = defaultValue;
                 indicator4.getLayoutParams().width = defaultValue;
                 indicator4.requestLayout();
+                indicator4.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator5.getLayoutParams().height = defaultValue;
                 indicator5.getLayoutParams().width = defaultValue;
                 indicator5.requestLayout();
+                indicator5.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
+
                 break;
 
             case 3:
                 indicator1.getLayoutParams().height = defaultValue;
                 indicator1.getLayoutParams().width = defaultValue;
                 indicator1.requestLayout();
+                indicator1.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator2.getLayoutParams().height = defaultValue;
                 indicator2.getLayoutParams().width = defaultValue;
                 indicator2.requestLayout();
+                indicator2.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator3.getLayoutParams().height = defaultValue;
                 indicator3.getLayoutParams().width = defaultValue;
                 indicator3.requestLayout();
+                indicator3.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator4.getLayoutParams().height = resizeValue;
                 indicator4.getLayoutParams().width = resizeValue;
                 indicator4.requestLayout();
+                indicator4.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
 
                 indicator5.getLayoutParams().height = defaultValue;
                 indicator5.getLayoutParams().width = defaultValue;
                 indicator5.requestLayout();
+                indicator5.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
+
                 break;
 
 
@@ -210,22 +234,27 @@ public class MainActivity extends AppCompatActivity {
                 indicator1.getLayoutParams().height = defaultValue;
                 indicator1.getLayoutParams().width = defaultValue;
                 indicator1.requestLayout();
+                indicator1.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator2.getLayoutParams().height = defaultValue;
                 indicator2.getLayoutParams().width = defaultValue;
                 indicator2.requestLayout();
+                indicator2.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator3.getLayoutParams().height = defaultValue;
                 indicator3.getLayoutParams().width = defaultValue;
                 indicator3.requestLayout();
+                indicator3.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator4.getLayoutParams().height = defaultValue;
                 indicator4.getLayoutParams().width = defaultValue;
                 indicator4.requestLayout();
+                indicator4.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite)));
 
                 indicator5.getLayoutParams().height = resizeValue;
                 indicator5.getLayoutParams().width = resizeValue;
                 indicator5.requestLayout();
+                indicator5.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
                 break;
         }
 
