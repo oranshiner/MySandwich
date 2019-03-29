@@ -1,5 +1,6 @@
 package com.oran.mysandwich;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,8 +14,6 @@ import android.widget.ImageView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -29,15 +28,23 @@ public class WizardFragment extends Fragment {
 	boolean tomato;
 	boolean cucumber;
 	boolean mayo;
+    private MainActivity mActivity;
 
 
-
-	public WizardFragment(int position) {
+    public WizardFragment(int position) {
 		this.wizard_page_position = position;
 	}
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
 
-	@Override
+        if (context instanceof MainActivity) {
+            mActivity = (MainActivity) context;
+        }
+    }
+
+    @Override
 	public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
@@ -48,30 +55,31 @@ public class WizardFragment extends Fragment {
 		cucumber = false;
 		mayo = false;
 
-		int layout_id = R.layout.page1;
+		final int[] layout_id = {R.layout.page1};
 		switch (wizard_page_position) {
 		case 0:
-			layout_id = R.layout.page1;
+			layout_id[0] = R.layout.page1;
 			break;
 
 		case 1:
-			layout_id = R.layout.page2;
+			layout_id[0] = R.layout.page2;
 			break;
 			
 		case 2:
-			layout_id = R.layout.page3;
+			layout_id[0] = R.layout.page3;
 			break;
 			
 		case 3:
-			layout_id = R.layout.page4;
+			layout_id[0] = R.layout.page4;
 			break;
 
 			case 4:
-				layout_id = R.layout.page5;
+				layout_id[0] = R.layout.page5;
 				break;
 		}
 
-		View inflate = inflater.inflate(layout_id, container, false);
+		View inflate = inflater.inflate(layout_id[0], container, false);
+
 		if (inflate.findViewById (R.id.home_btn) !=null ){
 			ImageView home_btn = (ImageView) inflate.findViewById(R.id.home_btn);
 			home_btn.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +89,80 @@ public class WizardFragment extends Fragment {
 				}
 			});
 		}
+
+        if (inflate.findViewById (R.id.arrowRight) !=null ){
+            ImageView arrow_btn = (ImageView) inflate.findViewById(R.id.arrowRight);
+            arrow_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    mActivity.setPage(1);
+                }
+            });
+        }
+        if (inflate.findViewById (R.id.arrowRight1) !=null ){
+            ImageView arrow_btn = (ImageView) inflate.findViewById(R.id.arrowRight1);
+            arrow_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    mActivity.setPage(2);
+                }
+            });
+        }
+        if (inflate.findViewById (R.id.arrowRight2) !=null ){
+            ImageView arrow_btn = (ImageView) inflate.findViewById(R.id.arrowRight2);
+            arrow_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    mActivity.setPage(3);
+                }
+            });
+        }
+        if (inflate.findViewById (R.id.arrowRight3) !=null ){
+            ImageView arrow_btn = (ImageView) inflate.findViewById(R.id.arrowRight3);
+            arrow_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    mActivity.setPage(4);
+                }
+            });
+        }
+        if (inflate.findViewById (R.id.arrowLeft) !=null ){
+            ImageView arrow_btn = (ImageView) inflate.findViewById(R.id.arrowLeft);
+            arrow_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    mActivity.setPage(0);
+                }
+            });
+        }
+        if (inflate.findViewById (R.id.arrowLeft1) !=null ){
+            ImageView arrow_btn = (ImageView) inflate.findViewById(R.id.arrowLeft1);
+            arrow_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    mActivity.setPage(1);
+                }
+            });
+        }
+        if (inflate.findViewById (R.id.arrowLeft2) !=null ){
+            ImageView arrow_btn = (ImageView) inflate.findViewById(R.id.arrowLeft2);
+            arrow_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    mActivity.setPage(2);
+                }
+            });
+        }
+        if (inflate.findViewById (R.id.arrowLeft3) !=null ){
+            ImageView arrow_btn = (ImageView) inflate.findViewById(R.id.arrowLeft3);
+            arrow_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    mActivity.setPage(3);
+                }
+            });
+        }
+
 		if (inflate.findViewById (R.id.two) !=null ){
 			final ImageView bread_btn = (ImageView) inflate.findViewById(R.id.two);
 			final ImageView bread_img = (ImageView) inflate.findViewById(R.id.bread_img);
@@ -95,7 +177,7 @@ public class WizardFragment extends Fragment {
 						setBreadValue(true);
 
 					} else{
-						bread_btn.setImageResource(R.drawable.bread_w_icon);
+						bread_btn.setImageResource(R.drawable.w_bread_icon);
 						bread_img.setAlpha(0f);
 						Sandwich.getInstance().setBread(false);
 						setBreadValue(false);

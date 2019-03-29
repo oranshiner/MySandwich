@@ -139,8 +139,8 @@
     <ImageView
 
         android:id="@+id/mayo_icon"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
         android:src="@drawable/mayo_icon"
@@ -150,8 +150,8 @@
 
     <ImageView
         android:id="@+id/ketshup_icon"
-        android:layout_width="53dp"
-        android:layout_height="54dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
@@ -162,8 +162,8 @@
 
     <ImageView
         android:id="@+id/hardal_icon"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="159dp"
@@ -175,8 +175,8 @@
     <ImageView
         android:alpha="0"
         android:id="@+id/croissant"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -223,7 +223,7 @@
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView
-        android:id="@+id/arrowLeft"
+        android:id="@+id/arrowLeft2"
         android:layout_width="16dp"
         android:layout_height="16dp"
         android:layout_marginStart="29dp"
@@ -233,7 +233,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/arrowRight"
+        android:id="@+id/arrowRight3"
         android:layout_width="16dp"
         android:layout_height="16dp"
         android:layout_marginEnd="29dp"
