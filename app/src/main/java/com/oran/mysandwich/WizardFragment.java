@@ -92,7 +92,6 @@ public class WizardFragment extends Fragment {
 						bread_btn.setImageResource(R.drawable.s_w_bread_icon);
 						bread_img.setAlpha(1.0f);
 						Sandwich.getInstance().setBread(true);
-
 						setBreadValue(true);
 
 					} else{
@@ -117,9 +116,13 @@ public class WizardFragment extends Fragment {
 					if(cheese) {
 						cheese_btn.setImageResource(R.drawable.s_cheese_icon);
 						cheese_img.setAlpha(1.0f);
+						setCheeseValue(true);
+
 					}else {
 						cheese_btn.setImageResource(R.drawable.cheese_icon);
 						cheese_img.setAlpha(0.0f);
+						setCheeseValue(false);
+
 					}
 				}
 			});
@@ -134,9 +137,12 @@ public class WizardFragment extends Fragment {
 					if(lettuce) {
 					lettuce_btn.setImageResource(R.drawable.s_lettuce_icon);
 					lettuce_img.setAlpha(1.0f);
+						setLettuceValue(true);
+
 					}else {
 						lettuce_btn.setImageResource(R.drawable.lettuce_icon);
 						lettuce_img.setAlpha(0.0f);
+						setLettuceValue(false);
 					}
 				}
 			});
@@ -152,9 +158,13 @@ public class WizardFragment extends Fragment {
 					if(tomato) {
 					tomato_btn.setImageResource(R.drawable.s_tomato_icon);
 					tomato_img.setAlpha(1.0f);
+						setTomatoValue(true);
+
 					}else {
 						tomato_btn.setImageResource(R.drawable.tomato_icon);
 						tomato_img.setAlpha(0.0f);
+						setTomatoValue(false);
+
 					}
 				}
 			});
@@ -170,9 +180,11 @@ public class WizardFragment extends Fragment {
 					if(cucumber) {
 						cucumber_btn.setImageResource(R.drawable.s_cucumber_icon);
 					    cucumber_img.setAlpha(1.0f);
+						setCucumberValue(true);
 					}else {
 						cucumber_btn.setImageResource(R.drawable.cucumber_icon);
 						cucumber_img.setAlpha(0.0f);
+						setCucumberValue(false);
 					}
 
 				}
@@ -188,10 +200,12 @@ public class WizardFragment extends Fragment {
 					if(mayo) {
 						mayo_btn.setImageResource(R.drawable.s_mayo_icon);
 						mayo_img.setAlpha(1.0f);
+						setMayoValue(true);
+
 					}else {
 						mayo_btn.setImageResource(R.drawable.mayo_icon);
 						mayo_img.setAlpha(0.0f);
-					}
+						setMayoValue(false); }
 					}
 			});
 		}
@@ -222,5 +236,71 @@ public class WizardFragment extends Fragment {
 			}
 		});
 	}
+
+	private void setCheeseValue(boolean bool) {
+		FirebaseFirestore db = FirebaseFirestore.getInstance();
+		Map<String, Object> items = new HashMap<>();
+		items.put("cheese", bool);
+		db.collection("mysandwich").document("doc1")
+				.update(items).addOnCompleteListener(new OnCompleteListener<Void>() {
+			@Override
+			public void onComplete(@NonNull Task<Void> task) {
+				Log.d("TAG", "complete");
+			}
+		});
+	}
+
+	private void setLettuceValue(boolean bool) {
+		FirebaseFirestore db = FirebaseFirestore.getInstance();
+		Map<String, Object> items = new HashMap<>();
+		items.put("lettuce", bool);
+		db.collection("mysandwich").document("doc1")
+				.update(items).addOnCompleteListener(new OnCompleteListener<Void>() {
+			@Override
+			public void onComplete(@NonNull Task<Void> task) {
+				Log.d("TAG", "complete");
+			}
+		});
+	}
+
+	private void setTomatoValue(boolean bool) {
+		FirebaseFirestore db = FirebaseFirestore.getInstance();
+		Map<String, Object> items = new HashMap<>();
+		items.put("tomato", bool);
+		db.collection("mysandwich").document("doc1")
+				.update(items).addOnCompleteListener(new OnCompleteListener<Void>() {
+			@Override
+			public void onComplete(@NonNull Task<Void> task) {
+				Log.d("TAG", "complete");
+			}
+		});
+	}
+
+	private void setCucumberValue(boolean bool) {
+		FirebaseFirestore db = FirebaseFirestore.getInstance();
+		Map<String, Object> items = new HashMap<>();
+		items.put("cucumber", bool);
+		db.collection("mysandwich").document("doc1")
+				.update(items).addOnCompleteListener(new OnCompleteListener<Void>() {
+			@Override
+			public void onComplete(@NonNull Task<Void> task) {
+				Log.d("TAG", "complete");
+			}
+		});
+	}
+
+	private void setMayoValue(boolean bool) {
+		FirebaseFirestore db = FirebaseFirestore.getInstance();
+		Map<String, Object> items = new HashMap<>();
+		items.put("mayo", bool);
+		db.collection("mysandwich").document("doc1")
+				.update(items).addOnCompleteListener(new OnCompleteListener<Void>() {
+			@Override
+			public void onComplete(@NonNull Task<Void> task) {
+				Log.d("TAG", "complete");
+			}
+		});
+	}
+
 
 }
