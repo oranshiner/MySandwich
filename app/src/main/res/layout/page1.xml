@@ -8,6 +8,15 @@
     android:gravity="center">
 
     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/disable_home_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:alpha="0"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -42,7 +51,7 @@
         android:layout_width="205dp"
         android:layout_height="205dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/plate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,11 +63,12 @@
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="82dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
         android:alpha="0"
         android:src="@drawable/bread_img"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

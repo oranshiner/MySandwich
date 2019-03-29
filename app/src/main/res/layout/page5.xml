@@ -52,7 +52,7 @@
         android:layout_width="205dp"
         android:layout_height="205dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/plate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,58 +64,71 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/mysandwich_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="159dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="156dp"
         android:src="@drawable/mayo_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ketshup_icon"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView9"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginBottom="159dp"
+        android:layout_marginBottom="52dp"
         android:src="@drawable/lettuce_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/action_btn"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7" />
 
     <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginLeft="170dp"
-        android:layout_marginBottom="159dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="156dp"
         android:src="@drawable/cucumber_icon"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginLeft="230dp"
-        android:layout_marginBottom="159dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="156dp"
         android:src="@drawable/tomato_icon"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginLeft="290dp"
-        android:layout_marginBottom="159dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="156dp"
         android:src="@drawable/cheese_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5" />
 
     <ImageView
         android:id="@+id/arrowLeft3"
@@ -142,7 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
