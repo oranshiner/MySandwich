@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void setPage(int position) {
+        viewPager.setCurrentItem(position);
+    }
+
     private class ViewPagerAdapter extends FragmentPagerAdapter {
 
         private int WIZARD_PAGES_COUNT = 5;
