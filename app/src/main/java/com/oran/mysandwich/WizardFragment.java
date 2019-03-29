@@ -80,6 +80,7 @@ public class WizardFragment extends Fragment {
 					if(bread){
 						bread_btn.setImageResource(R.drawable.s_w_bread_icon);
 						bread_img.setAlpha(1.0f);
+
 					} else{
 						bread_btn.setImageResource(R.drawable.bread_w_icon);
 						bread_img.setAlpha(0f);
