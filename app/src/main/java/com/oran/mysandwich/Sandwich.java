@@ -11,7 +11,7 @@ public class Sandwich {
 
     private static final Sandwich instance = new Sandwich();
 
-    private Sandwich(boolean bread, boolean cheese, boolean lettuce, boolean tomato, boolean cucumber, boolean mayo) {
+    private Sandwich() {
 
         this.bread = bread;
         this.cheese = cheese;
