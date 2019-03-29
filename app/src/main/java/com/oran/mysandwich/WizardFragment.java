@@ -14,6 +14,11 @@ public class WizardFragment extends Fragment {
 	int wizard_page_position;
 	boolean bread;
 	boolean cheese;
+	boolean lettuce;
+	boolean tomato;
+	boolean cucumber;
+	boolean mayo;
+
 
 
 	public WizardFragment(int position) {
@@ -27,6 +32,10 @@ public class WizardFragment extends Fragment {
 
 		bread = false;
 		cheese = false;
+		lettuce = false;
+		tomato = false;
+		cucumber = false;
+		mayo = false;
 
 		int layout_id = R.layout.page1;
 		switch (wizard_page_position) {
@@ -88,8 +97,13 @@ public class WizardFragment extends Fragment {
 				@Override
 				public void onClick(View v){
 					cheese = !cheese;
-					cheese_btn.setImageResource(R.drawable.s_cheese_icon);
-					cheese_img.setAlpha(1.0f);
+					if(cheese) {
+						cheese_btn.setImageResource(R.drawable.s_cheese_icon);
+						cheese_img.setAlpha(1.0f);
+					}else {
+						cheese_btn.setImageResource(R.drawable.cheese_icon);
+						cheese_img.setAlpha(0.0f);
+					}
 				}
 			});
 		}
@@ -99,9 +113,14 @@ public class WizardFragment extends Fragment {
 			lettuce_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
+					lettuce = !lettuce;
+					if(lettuce) {
 					lettuce_btn.setImageResource(R.drawable.s_lettuce_icon);
 					lettuce_img.setAlpha(1.0f);
-
+					}else {
+						lettuce_btn.setImageResource(R.drawable.lettuce_icon);
+						lettuce_img.setAlpha(0.0f);
+					}
 				}
 			});
 		}
@@ -112,8 +131,14 @@ public class WizardFragment extends Fragment {
 			tomato_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
+					tomato = !tomato;
+					if(tomato) {
 					tomato_btn.setImageResource(R.drawable.s_tomato_icon);
 					tomato_img.setAlpha(1.0f);
+					}else {
+						tomato_btn.setImageResource(R.drawable.tomato_icon);
+						tomato_img.setAlpha(0.0f);
+					}
 				}
 			});
 		}
@@ -124,19 +149,33 @@ public class WizardFragment extends Fragment {
 			cucumber_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
-					cucumber_btn.setImageResource(R.drawable.s_cucumber_icon);
-					cucumber_img.setAlpha(1.0f);
+					cucumber = !cucumber;
+					if(cucumber) {
+						cucumber_btn.setImageResource(R.drawable.s_cucumber_icon);
+					    cucumber_img.setAlpha(1.0f);
+					}else {
+						cucumber_btn.setImageResource(R.drawable.cucumber_icon);
+						cucumber_img.setAlpha(0.0f);
+					}
 
 				}
 			});
 		}
 		if (inflate.findViewById (R.id.mayo_icon) !=null ){
 			final ImageView mayo_btn = (ImageView) inflate.findViewById(R.id.mayo_icon);
+			final ImageView mayo_img = (ImageView) inflate.findViewById(R.id.mayo_icon_hidden);
 			mayo_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
-					mayo_btn.setImageResource(R.drawable.s_mayo_icon);
-				}
+					mayo = !mayo;
+					if(mayo) {
+						mayo_btn.setImageResource(R.drawable.s_mayo_icon);
+						mayo_img.setAlpha(1.0f);
+					}else {
+						mayo_btn.setImageResource(R.drawable.mayo_icon);
+						mayo_img.setAlpha(0.0f);
+					}
+					}
 			});
 		}
 
