@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/map"
-    android:gravity="center">
+    android:gravity="center"
+    >
 
     <ImageView
         android:alpha="0.5"
@@ -75,8 +76,8 @@
 
     <ImageView
         android:id="@+id/one"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -87,8 +88,8 @@
 
     <ImageView
         android:id="@+id/two"
-        android:layout_width="53dp"
-        android:layout_height="54dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -99,8 +100,8 @@
 
     <ImageView
         android:id="@+id/tree"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -112,8 +113,8 @@
 
     <ImageView
         android:id="@+id/fore"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -126,8 +127,8 @@
 
     <ImageView
         android:id="@+id/five"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -140,8 +141,8 @@
 
     <ImageView
         android:id="@+id/six"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -213,7 +214,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:text="קראסון"
         style="@style/food_text_view"
         app:layout_constraintEnd_toEndOf="@+id/fore"
@@ -224,7 +225,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:text="באגט"
         style="@style/food_text_view"
         app:layout_constraintEnd_toEndOf="@+id/five"
@@ -235,7 +236,7 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:text="לחמניה"
         style="@style/food_text_view"
         app:layout_constraintEnd_toEndOf="@+id/six"

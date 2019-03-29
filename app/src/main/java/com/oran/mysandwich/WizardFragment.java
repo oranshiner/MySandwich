@@ -13,8 +13,6 @@ import android.widget.ImageView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -48,30 +46,31 @@ public class WizardFragment extends Fragment {
 		cucumber = false;
 		mayo = false;
 
-		int layout_id = R.layout.page1;
+		final int[] layout_id = {R.layout.page1};
 		switch (wizard_page_position) {
 		case 0:
-			layout_id = R.layout.page1;
+			layout_id[0] = R.layout.page1;
 			break;
 
 		case 1:
-			layout_id = R.layout.page2;
+			layout_id[0] = R.layout.page2;
 			break;
 			
 		case 2:
-			layout_id = R.layout.page3;
+			layout_id[0] = R.layout.page3;
 			break;
 			
 		case 3:
-			layout_id = R.layout.page4;
+			layout_id[0] = R.layout.page4;
 			break;
 
 			case 4:
-				layout_id = R.layout.page5;
+				layout_id[0] = R.layout.page5;
 				break;
 		}
 
-		View inflate = inflater.inflate(layout_id, container, false);
+		View inflate = inflater.inflate(layout_id[0], container, false);
+
 		if (inflate.findViewById (R.id.home_btn) !=null ){
 			ImageView home_btn = (ImageView) inflate.findViewById(R.id.home_btn);
 			home_btn.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +80,7 @@ public class WizardFragment extends Fragment {
 				}
 			});
 		}
+
 		if (inflate.findViewById (R.id.two) !=null ){
 			final ImageView bread_btn = (ImageView) inflate.findViewById(R.id.two);
 			final ImageView bread_img = (ImageView) inflate.findViewById(R.id.bread_img);
