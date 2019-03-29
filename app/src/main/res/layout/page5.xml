@@ -37,6 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="625dp"
         android:scaleType="fitXY"
@@ -51,10 +52,11 @@
         android:layout_width="205dp"
         android:layout_height="205dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="114dp"
+        android:layout_marginTop="148dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/plate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,10 +64,11 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="114dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/mysandwich_img"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <ImageView
@@ -133,5 +136,26 @@
         android:src="@drawable/action_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/gay_text"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </android.support.constraint.ConstraintLayout>

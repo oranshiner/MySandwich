@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">MySandwich</string>
+    <string name="confirm">הסנדוויץ של גיא\nנשלח לאישור</string>
+    <string name="choose_braid_kind">בחירת סוג לחם</string>
+    <string name="black_braid">לחם שחור</string>
+    <string name="withe_braid">לחם לבן</string>
+    <string name="pita">פיתה</string>
+    <string name="kruason">קראסון</string>
+    <string name="baget">באגט</string>
+    <string name="lahmania">לחמניה</string>
+    <string name="choose_main_addition">בחירת תוספת עיקרית</string>
+    <string name="yello_cheese">גבינה צהובה</string>
+    <string name="salami">סלמי</string>
+    <string name="egg">ביצה</string>
+    <string name="meetlof">קציצה</string>
+    <string name="add_edition">בחירת תוספת</string>
+    <string name="tometo">עגבניה</string>
+    <string name="melaffon">מלפפון</string>
+    <string name="melaffon_hamuts">מלפפון חמוץ</string>
+    <string name="hasa">חסה</string>
+    <string name="choose_mimrha">בחירת ממרח</string>
+    <string name="hardal">חרדל</string>
+    <string name="ketshope">קטשופ</string>
+    <string name="mauonez">מיונז</string>
+    <string name="thina">טחינה</string>
+    <string name="gay_text">הסנדוויץ של גיא!</string>
 </resources>
