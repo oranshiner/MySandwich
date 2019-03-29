@@ -182,8 +182,6 @@ public class WizardFragment extends Fragment {
 						Sandwich.getInstance().setBread(false);
 						setBreadValue(false);
 					}
-
-
 				}
 			});
 		}
