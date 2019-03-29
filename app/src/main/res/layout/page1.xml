@@ -8,7 +8,7 @@
     android:gravity="center">
 
     <ImageView
-        android:alpha="0.5"
+        android:alpha="0"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="18dp"
@@ -42,7 +42,7 @@
         android:layout_width="205dp"
         android:layout_height="205dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="114dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/plate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +55,7 @@
         android:layout_height="160dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="130dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="82dp"
         android:alpha="0"
         android:src="@drawable/bread_img"
         app:layout_constraintEnd_toEndOf="parent"
