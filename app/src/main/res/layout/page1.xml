@@ -85,8 +85,8 @@
 
     <ImageView
         android:id="@+id/one"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -97,8 +97,8 @@
 
     <ImageView
         android:id="@+id/two"
-        android:layout_width="53dp"
-        android:layout_height="54dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -109,8 +109,8 @@
 
     <ImageView
         android:id="@+id/tree"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -122,8 +122,8 @@
 
     <ImageView
         android:id="@+id/fore"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -136,8 +136,8 @@
 
     <ImageView
         android:id="@+id/five"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -150,8 +150,8 @@
 
     <ImageView
         android:id="@+id/six"
-        android:layout_width="55dp"
-        android:layout_height="54dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
