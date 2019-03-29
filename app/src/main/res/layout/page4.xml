@@ -74,11 +74,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/cucumber_icon_hidden"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/cucumber_icon"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,11 +86,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/lettuce_icon_hidden"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/lettuce_icon"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,11 +98,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/tomato_icon_hidden"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="139dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/tomato_icon"
         app:layout_constraintEnd_toEndOf="parent"
