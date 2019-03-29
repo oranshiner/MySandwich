@@ -12,6 +12,9 @@ import android.widget.ImageView;
 public class WizardFragment extends Fragment {
 
 	int wizard_page_position;
+	boolean bread;
+	boolean cheese;
+
 
 	public WizardFragment(int position) {
 		this.wizard_page_position = position;
@@ -21,6 +24,9 @@ public class WizardFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+		bread = false;
+		cheese = false;
 
 		int layout_id = R.layout.page1;
 		switch (wizard_page_position) {
@@ -57,48 +63,70 @@ public class WizardFragment extends Fragment {
 		}
 		if (inflate.findViewById (R.id.two) !=null ){
 			final ImageView bread_btn = (ImageView) inflate.findViewById(R.id.two);
+			final ImageView bread_img = (ImageView) inflate.findViewById(R.id.bread_img);
 			bread_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
-					bread_btn.setImageResource(R.drawable.s_w_bread_icon);
+					bread = !bread;
+					if(bread){
+						bread_btn.setImageResource(R.drawable.s_w_bread_icon);
+						bread_img.setAlpha(1.0f);
+					} else{
+						bread_btn.setImageResource(R.drawable.bread_w_icon);
+						bread_img.setAlpha(0f);
+					}
+
+
 				}
 			});
 		}
+
 		if (inflate.findViewById (R.id.cheese_icon) !=null ){
 			final ImageView cheese_btn = (ImageView) inflate.findViewById(R.id.cheese_icon);
+			final ImageView cheese_img = (ImageView) inflate.findViewById(R.id.cheese_img);
 			cheese_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
+					cheese = !cheese;
 					cheese_btn.setImageResource(R.drawable.s_cheese_icon);
+					cheese_img.setAlpha(1.0f);
 				}
 			});
 		}
 		if (inflate.findViewById (R.id.lettuce_icon) !=null ){
 			final ImageView lettuce_btn = (ImageView) inflate.findViewById(R.id.lettuce_icon);
+			final ImageView lettuce_img = (ImageView) inflate.findViewById(R.id.lettuce_icon_hidden);
 			lettuce_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
 					lettuce_btn.setImageResource(R.drawable.s_lettuce_icon);
+					lettuce_img.setAlpha(1.0f);
+
 				}
 			});
 		}
 
 		if (inflate.findViewById (R.id.tomato_icon) !=null ){
 			final ImageView tomato_btn = (ImageView) inflate.findViewById(R.id.tomato_icon);
+			final ImageView tomato_img = (ImageView) inflate.findViewById(R.id.tomato_icon_hidden);
 			tomato_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
 					tomato_btn.setImageResource(R.drawable.s_tomato_icon);
+					tomato_img.setAlpha(1.0f);
 				}
 			});
 		}
 
 		if (inflate.findViewById (R.id.cucumber_icon) !=null ){
 			final ImageView cucumber_btn = (ImageView) inflate.findViewById(R.id.cucumber_icon);
+			final ImageView cucumber_img = (ImageView) inflate.findViewById(R.id.cucumber_icon_hidden);
 			cucumber_btn.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v){
 					cucumber_btn.setImageResource(R.drawable.s_cucumber_icon);
+					cucumber_img.setAlpha(1.0f);
+
 				}
 			});
 		}
