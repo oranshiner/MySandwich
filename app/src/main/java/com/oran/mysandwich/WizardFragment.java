@@ -2,12 +2,23 @@ package com.oran.mysandwich;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class WizardFragment extends Fragment {
 
@@ -80,10 +91,15 @@ public class WizardFragment extends Fragment {
 					if(bread){
 						bread_btn.setImageResource(R.drawable.s_w_bread_icon);
 						bread_img.setAlpha(1.0f);
+						Sandwich.getInstance().setBread(true);
+
+						setBreadValue(true);
 
 					} else{
 						bread_btn.setImageResource(R.drawable.bread_w_icon);
 						bread_img.setAlpha(0f);
+						Sandwich.getInstance().setBread(false);
+						setBreadValue(false);
 					}
 
 
@@ -192,6 +208,19 @@ public class WizardFragment extends Fragment {
 
 
 		return inflate;
+	}
+
+	private void setBreadValue(boolean bool) {
+		FirebaseFirestore db = FirebaseFirestore.getInstance();
+		Map<String, Object> items = new HashMap<>();
+		items.put("Bread", bool);
+		db.collection("mysandwich").document("doc1")
+				.update(items).addOnCompleteListener(new OnCompleteListener<Void>() {
+			@Override
+			public void onComplete(@NonNull Task<Void> task) {
+				Log.d("TAG", "complete");
+			}
+		});
 	}
 
 }

@@ -11,15 +11,6 @@ public class Sandwich {
 
     private static final Sandwich instance = new Sandwich();
 
-    private Sandwich() {
-
-        this.bread = bread;
-        this.cheese = cheese;
-        this.lettuce = lettuce;
-        this.tomato = tomato;
-        this.cucumber = cucumber;
-        this.mayo = mayo;
-    }
 
     public static Sandwich getInstance() {
         return instance;
@@ -73,5 +64,6 @@ public class Sandwich {
     public void setMayo(boolean mayo) {
         this.mayo = mayo;
     }
+
 }
 
