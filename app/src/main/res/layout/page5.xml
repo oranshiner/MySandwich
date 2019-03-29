@@ -147,7 +147,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
         android:lineSpacingExtra="6sp"
-        android:text="@string/gay_text"
+        android:text="@str6ing/gay_text"
         android:textColor="#ffffff"
         android:textSize="26sp"
         android:textStyle="normal"
